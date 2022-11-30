@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create New ID</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheet/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav><label style="color:#4285F4;font-size: xx-large; font-weight: 600;">Smart</label>
+        <label style="color:white;font-size: xx-large;font-weight: 600;">Scan</label>
+    </nav>
+    <div class="preview1">
+        <div class="form_details">
+            <div id="fdata">
+                <h3>Form 1</h3>
+                Name <br>
+                <input type="text"><br><br>
+                Gender <br>
+                <input type="radio" name="gender" value="Male"> Male<br>
+                <input type="radio" name="gender" value="Female"> Female<br>
+                <input type="radio" name="gender" value="Others"> Others<br><br>
+                Date of Birth <br>
+                <input type="date"><br><br>
+                <!-- <input type="submit" id="sbtn"><br> -->
+
+
+                <label>Upload ID Proof </label>
+                <button id="document">Upload</button><br><br>
+                <!--QR CODE MODEL-->
+
+                <div id="myModal" class="modal" style="width:100%">
+                    <div class="modal-content" style="width:22%">
+                        <span class="close">&times;</span>
+                        1. Scan the QR using SmartScan App. <br><br>
+                        <canvas id="qr-code"></canvas><br>
+                        2. After successfully uploading click on fetch. <br><br>
+                        <button id="find">Fetch</button>
+                    </div>
+                </div>
+
+
+                <button id="create_button">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="preview2">
+        <iframe id="docx" src="" frameborder="0"></iframe>
+    </div>
+
+    <script type="module" src="../script.js"></script>
+</body>
+
+</html>
+
+
+<style>
+    nav {
+        background-color: black;
+        padding-left: 20px;
+    }
+
+    #fdata {
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+
+    /* #first_name {
+        width: 150px;
+        height: 20px;
+        border-radius: 5px;
+        margin: 20px;
+    }
+
+    #last_name {
+        width: 150px;
+        height: 20px;
+        border-radius: 5px;
+        margin: 20px;
+    }
+
+    #dob {
+        width: 150px;
+        height: 20px;
+        border-radius: 5px;
+        margin: 20px;
+    }
+
+    #gender {
+        width: 150px;
+        height: 20px;
+        border-radius: 5px;
+        margin: 20px;
+    } */
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>

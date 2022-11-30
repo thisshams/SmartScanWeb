@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Update ID</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="../stylesheet/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="preview1">
+            <div class="form_details">
+                <label>Enter your ID</label><br>
+                <input id="uid" type="text"><br>
+
+                <label>Update Email</label><br>
+                <input id="email_id" type="email"><br>
+
+                <label>Update Number</label><br>
+                <input id="mobile_number" type="text"><br>
+
+                <label>Update Photo</label>
+                <button id="document">Upload</button><br><br>
+
+                <!--QR CODE MODEL-->
+                
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span><br><br>
+                      <canvas id="qr-code"></canvas><br>
+                          <button id="find">Fetch</button>
+                    </div>
+                </div>                
+                <button id="create_button">Update Details</button>
+            </div>
+        </div>
+        <div class="preview2">
+            <iframe id="docx" src="" frameborder="0"></iframe>
+        </div>
+        <script type="module" src="/script.js"></script>
+    </body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
